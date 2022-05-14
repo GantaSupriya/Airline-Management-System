@@ -99,18 +99,22 @@
     			}
     			echo "</table> <br>";
 			}
+
+			$todays_date=date("Y-m-d",strtotime("tomorrow"));
+			$new_time=date('H:i:s',time());
+
 			$query="SELECT a.flight_no, a.departure_time, a.departure_date FROM flight_details a,Ticket_Details b where b.customer_id=? AND a.departure_date=? AND  a.departure_time<? AND b.booking_status='CONFIRMED' AND a.flight_no= b.flight_no";
 			$stmt=mysqli_prepare($dbc,$query);
 			mysqli_stmt_bind_param($stmt,"sss",$customer_id,$todays_date,$new_time);
 			mysqli_stmt_execute($stmt);
 			mysqli_stmt_bind_result($stmt,$flight_no,$departure_time,$departure_date);
 			mysqli_stmt_store_result($stmt);
-			if(mysqli_stmt_num_rows($stmt))
+			if(mysqli_stmt_num_rows($stmt)>0)
 			{
-				echo '<script>alert("Flight leaving")</script>';
+				echo '<script>alert("Flight leaving soon")</script>';
 			}
 			
-			echo '<script>alert("Flight leaving soon")</script>';
+			#echo '<script>alert("Flight leaving soon")</script>';
 
 
 			echo "<br><h3 class=\"set_nice_size\"><center><u>Completed Trips</u></center></h3>";

@@ -3,6 +3,7 @@
 ?>
 <html>
 	<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<title>
 			View Booked Tickets
 		</title>
@@ -89,5 +90,6 @@
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);
 		?>
+		<a href="edit_cust_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
 	</body>
 </html>
