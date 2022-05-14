@@ -57,12 +57,16 @@
 					$address=$_POST['address'];
 				}
 
+				if(!empty($_POST['memtype'])) {
+					$membership=$_POST['memtype'];
+				}
+
 				if(empty($data_missing))
 				{
 					require_once('Database Connection file/mysqli_connect.php');
-					$query="INSERT INTO Customer (customer_id,pwd,name,email,phone_no,address) VALUES (?,?,?,?,?,?)";
+					$query="INSERT INTO Customer (customer_id,pwd,name,email,phone_no,address,membership) VALUES (?,?,?,?,?,?,?)";
 					$stmt=mysqli_prepare($dbc,$query);
-					mysqli_stmt_bind_param($stmt,"ssssss",$user_name,$password,$name,$email_id,$phone_no,$address);
+					mysqli_stmt_bind_param($stmt,"sssssss",$user_name,$password,$name,$email_id,$phone_no,$address,$membership);
 					mysqli_stmt_execute($stmt);
 					$affected_rows=mysqli_stmt_affected_rows($stmt);
 					//echo $affected_rows."<br>";

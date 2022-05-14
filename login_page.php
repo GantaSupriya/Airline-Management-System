@@ -54,9 +54,6 @@
 				<input type="password" name="password" placeholder="Enter your password" required><br><br>
 				<strong>User Type:</strong><br>
 				Customer <input type='radio' name='user_type' value='Customer' checked/> Administrator <input type='radio' name='user_type' value='Administrator'/>
-				<br><br>
-				<strong>Membership type:</strong><br>
-				Gold <input type='radio' /> Platinum <input type='radio' />
 				<br>
 				<br>
 				<?php

@@ -74,11 +74,11 @@
 			
 			$customer_id=$_SESSION['login_user'];
 			require_once('Database Connection file/mysqli_connect.php');
-			$query="SELECT customer_id,name,email,phone_no,address FROM customer where customer_id=?";
+			$query="SELECT customer_id,name,email,phone_no,address,membership FROM customer where customer_id=?";
 			$stmt=mysqli_prepare($dbc,$query);
             mysqli_stmt_bind_param($stmt,"s",$customer_id);
 			mysqli_stmt_execute($stmt);
-			mysqli_stmt_bind_result($stmt,$custom_id,$name,$email,$phone_no,$address);
+			mysqli_stmt_bind_result($stmt,$custom_id,$name,$email,$phone_no,$address,$membership);
 			mysqli_stmt_store_result($stmt);
             while(mysqli_stmt_fetch($stmt)) {
             echo nl2br("name :".$name."\n");
@@ -86,6 +86,7 @@
             echo nl2br("phone_no : ".$phone_no."\n");
             echo nl2br("email : ".$email."\n");
             echo nl2br("address : ".$address."\n");
+			echo nl2br("membership : ".$membership."\n");
         }
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);

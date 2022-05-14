@@ -74,6 +74,10 @@
 				</tr>
 			</table>
 			<br>
+			<br>
+				<strong>Membership type:</strong><br>
+				classic<input name="memtype" type='radio' value="classic" checked/>Gold <input name="memtype" type='radio' value="gold" /> Platinum <input name="memtype" value="platinum" type='radio' />
+			<br>
 			<input type="submit" value="Submit" name="Submit">
 			<br>
 		</form>
