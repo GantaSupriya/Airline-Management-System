@@ -28,7 +28,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 	<img class="logo" src="images\air.jpg"/> 
 	<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;">
 			Blu Airways
@@ -46,8 +46,8 @@
 		<br>
 		<br>
 		<form class="float_form" style="padding-left: 40px" action="login_handler.php" method="POST">
-			<fieldset>
-				<legend>Login Details:-</legend>
+			
+				<h3>Login Details:-</h3>
 				<strong>Username:</strong><br>
 				<input type="text" name="username" placeholder="Enter your username" required><br><br>
 				<strong>Password:</strong><br>
@@ -65,9 +65,14 @@
 					}
 				?>
 				<input type="submit" name="Login" value="Login">
-			</fieldset>
-			<br>
+			
+
+			<br><br>
+			<a href="new_user.php"><i class="fa fa-user" aria-hidden="true"></i> Forgot Password</a>
+			<br><br>
 			<a href="new_user.php"><i class="fa fa-user-plus" aria-hidden="true"></i> Create New User Account?</a>
+
+
 		</form>
 	</body>
 </html>

@@ -35,7 +35,7 @@
     </style>
     <script src="https://kit.fontawesome.com/e90b3f623b.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 2400px;background-position:bottom;">
 		<div class="center">
 	<img  src="images\air.jpg" width="80px" height="80px" /> 
 		<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;font-size: 65px;">

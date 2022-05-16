@@ -85,7 +85,7 @@
 					else
 					{
 						echo "Submit Error";
-						echo mysqli_error();
+						echo mysqli_error ();
 					}
 				}
 				else

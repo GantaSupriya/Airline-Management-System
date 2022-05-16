@@ -7,7 +7,7 @@
 			Cancel Booked Tickets
 		</title>
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 		<?php
 			if(isset($_POST['Cancel_Ticket']))
 			{
