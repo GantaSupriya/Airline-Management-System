@@ -39,10 +39,9 @@
 			</ul>
 		</div>
 		<br>
-		<form action="upload_documents_form_handler.php" method="post" enctype="multipart/form-data">
-  Select image to upload:
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    <label>Select Image File:</label>
+    <input type="file" name="image">
+    <input type="submit" name="submit" value="Upload">
 </form>
-	</body>
 </html>
