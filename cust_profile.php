@@ -92,6 +92,6 @@
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);
 		?>
-		<a href="edit_cust_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+		<a href="edit_cust_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">uppdatte </a>
 	</body>
 </html>

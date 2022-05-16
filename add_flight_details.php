@@ -84,8 +84,8 @@
 					<td class="fix_table">Arrival Date</td>
 				</tr>
 				<tr>
-					<td class="fix_table"><input type="date" name="dep_date" required></td>
-					<td class="fix_table"><input type="date" name="arr_date" required></td>
+					<td class="fix_table"><input type="date" name="dep_date" min="<?= date('Y-m-d'); ?>" required></td>
+					<td class="fix_table"><input type="date" name="arr_date" min="<?= date('Y-m-d');?>" required></td>
 				</tr>
 			</table>
 			<br>

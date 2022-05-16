@@ -40,7 +40,7 @@
 						mysqli_close($dbc);
 						header("location: cancel_booked_tickets.php?msg=failed");
 					}
-					$query="UPDATE Ticket_Details SET booking_status='CANCELED' WHERE pnr=? and customer_id=?";
+					$query="UPDATE Ticket_Details SET booking_status='CANCELED' WHERE pnr=? and customer_id=? ";
 					$stmt=mysqli_prepare($dbc,$query);
 					mysqli_stmt_bind_param($stmt,"ss",$pnr,$customer_id);
 					mysqli_stmt_execute($stmt);

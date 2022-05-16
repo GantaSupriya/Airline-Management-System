@@ -69,7 +69,7 @@
 				</tr>
 				<tr>
 					<td class="fix_table"><input type="text" name="flight_no" required></td>
-					<td class="fix_table"><input type="date" name="departure_date" required></td>
+					<td class="fix_table"><input type="date" name="departure_date" min="<?= date('Y-m-d'); ?>" required></td>
 				</tr>
 			</table>
 			<br>

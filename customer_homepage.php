@@ -71,7 +71,9 @@
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);
 		?>
-		<table cellpadding="5">
+		<div class="center_form">
+			<center>
+		<table cellpadding="5" class="float_form">
 			<tr>
 				<td class="admin_func"><a href="book_tickets.php"><i class="fa fa-plane" aria-hidden="true"></i> Book Flight Tickets</a>
 				</td>
@@ -93,6 +95,7 @@
 				</td>
 			</tr>
 		</table>
+		</center>
 		<!--Following data fields were empty!
 			...
 			
@@ -100,5 +103,6 @@
 			PREDEFINED LOCATION WHEN BOOKING TICKETS
 
 		-->
+		</div>
 	</body>
 </html>
