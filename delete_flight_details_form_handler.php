@@ -44,7 +44,7 @@
 					/*
 					$response=@mysqli_query($dbc,$query);
 					*/
-					if($affected_rows>1)
+					if($affected_rows==1)
 					{
 						echo "Successfully Deleted";
 						header("location: delete_flight_details.php?msg=success");

@@ -71,7 +71,7 @@
 			
 
 			<br><br>
-			<a href="new_user.php"><i class="fa fa-user" aria-hidden="true"></i> Forgot Password</a>
+			<a href="forgot.php"><i class="fa fa-user" aria-hidden="true"></i> Forgot Password</a>
 			<br><br>
 			<a href="new_user.php"><i class="fa fa-user-plus" aria-hidden="true"></i> Create New User Account?</a>
 		</form>
