@@ -59,3 +59,9 @@ The aim of this project was to develop a website that helps the admin to add, de
 <br>
 
 ![image](https://user-images.githubusercontent.com/85996346/172060401-2d7f8e6b-d26b-469f-8398-d5655a3147fe.png)
+
+
+## Final Report
+<a href = "https://github.com/Rhuthvik-D/Airline-Management-System/blob/main/REPORT.docx">HERE</a>
+
+
