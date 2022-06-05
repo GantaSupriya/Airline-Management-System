@@ -35,7 +35,7 @@
     </style>
     <script src="https://kit.fontawesome.com/e90b3f623b.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 2400px;background-position:bottom;">
 		<div class="center">
 	<img  src="images\air.jpg" width="80px" height="80px" /> 
 		<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;font-size: 65px;">
@@ -177,7 +177,7 @@
 	   <h3>Delhi, India</h3>
 	   <p class="w3-opacity">Roundtrip from 6000/-</p>
 	   
-	   <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+	   <a href="book_tickets.php"><button class="w3-button w3-margin-bottom">Buy Tickets</button></a>
 	 </div>
    </div>
    <div class="w3-half w3-margin-bottom">
@@ -186,7 +186,7 @@
 	   <h3>Kerala, India</h3>
 	   <p class="w3-opacity">One-way from 3000/-</p>
 	   
-	   <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+	  <a href="book_tickets.php"> <button class="w3-button w3-margin-bottom">Buy Tickets</button></a>
 	 </div>
    </div>
  </div>
@@ -213,7 +213,7 @@
 	 <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
 	 <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
 	 <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-	 <p><button class="w3-button w3-blue w3-padding-large" type="submit">SEND MESSAGE</button></p>
+	 <a href="login_page.php"><button class="w3-button w3-blue w3-padding-large" type="submit">SEND MESSAGE</button></a>
    </form>
  </div>
  

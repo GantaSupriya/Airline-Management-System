@@ -40,7 +40,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 	<img class="logo" src="images\air.jpg"/> 
 	<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;">
 			Blu Airways
@@ -72,8 +72,9 @@
 
 
 			
-			$customer_id=$_SESSION['login_user'];
+
 			require_once('Database Connection file/mysqli_connect.php');
+			$customer_id=$_SESSION['login_user'];
 			$query="SELECT customer_id,name,email,phone_no,address,membership FROM customer where customer_id=?";
 			$stmt=mysqli_prepare($dbc,$query);
             mysqli_stmt_bind_param($stmt,"s",$customer_id);
@@ -91,6 +92,6 @@
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);
 		?>
-		<a href="edit_cust_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+		<a href="edit_cust_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">uppdatte </a>
 	</body>
 </html>

@@ -3,6 +3,8 @@
 ?>
 <html>
 	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 		<title>
 			Account Login
 		</title>
@@ -28,11 +30,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: linear-gradient(to bottom right,blue, purple);background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 	<img class="logo" src="images\air.jpg"/> 
+
 	<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;">
 			Blu Airways
 		</h1>
+
 		<div>
 			<ul>
 				<li><a href="home_page.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
@@ -42,20 +46,19 @@
 				<li><a href="login_page.php"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
 			</ul>
 		</div>
-		<br>
-		<br>
-		<br>
-		<form class="float_form" style="padding-left: 40px" action="login_handler.php" method="POST">
-			<fieldset>
-				<legend>Login Details:-</legend>
+
+		<div class="login-clean">
+		<form class="center_form" style="padding-left: 40px"  action="login_handler.php" method="POST">
+				<h3>Enter Login Details</h3>
 				<strong>Username:</strong><br>
-				<input type="text" name="username" placeholder="Enter your username" required><br><br>
+				<div class="form-group"><input class="form-control" type="text" name="username" placeholder="Enter your username" required><br><br></div>
 				<strong>Password:</strong><br>
-				<input type="password" name="password" placeholder="Enter your password" required><br><br>
+				<div class="form-group"><input class="form-control" type="password" name="password" placeholder="Enter your password" required><br><br></div>
 				<strong>User Type:</strong><br>
 				Customer <input type='radio' name='user_type' value='Customer' checked/> Administrator <input type='radio' name='user_type' value='Administrator'/>
 				<br>
 				<br>
+			
 				<?php
 					if(isset($_GET['msg']) && $_GET['msg']=='failed')
 					{
@@ -65,9 +68,14 @@
 					}
 				?>
 				<input type="submit" name="Login" value="Login">
-			</fieldset>
-			<br>
+			
+
+			<br><br>
+			<a href="forgot.php"><i class="fa fa-user" aria-hidden="true"></i> Forgot Password</a>
+			<br><br>
 			<a href="new_user.php"><i class="fa fa-user-plus" aria-hidden="true"></i> Create New User Account?</a>
 		</form>
+		</div>
+		</div>
 	</body>
 </html>

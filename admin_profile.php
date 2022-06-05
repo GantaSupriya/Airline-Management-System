@@ -35,10 +35,10 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 		<img class="logo" src="images/shutterstock_22.jpg"/> 
 		<h1 id="title">
-			FLYGOGO
+			Blu airways
 		</h1>
 		<div>
 			<ul>
@@ -82,6 +82,6 @@
 			mysqli_stmt_close($stmt);
 			mysqli_close($dbc);
 		?>
-		<a href="edit_admin_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+		<a href="edit_admin_profile.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">update</a>
 	</body>
 </html>

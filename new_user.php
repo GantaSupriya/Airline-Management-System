@@ -24,7 +24,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 	<img class="logo" src="images\air.jpg"/> 
 	<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;">
 			Blu Airways
@@ -39,22 +39,23 @@
 			</ul>
 		</div>
 		<br>
+		<div class="login-clean">
 		<form class="center_form" action="new_user_form_handler.php" method="POST" id="new_user_from">
-			<h2><i class="fa fa-user-plus" aria-hidden="true"></i> CREATE NEW USER ACCOUNT</h2>
+			<h3><i class="fa fa-user-plus" aria-hidden="true"></i> CREATE NEW USER ACCOUNT</h3>
 			<br>
 			<table cellpadding='10'>
 				<strong>ENTER LOGIN DETAILS</strong>
 				<tr>
 					<td>Enter a valid username  </td>
-					<td><input type="text" name="username" required><br><br></td>
+					<td><input type="text" name="username" pattern=".{2,}"required><br><br></td>
 				</tr>
 				<tr>
 					<td>Enter your desired password  </td>
-					<td><input type="password" name="password" required><br><br></td>
+					<td><input type="password" name="password" pattern=".{8,}"   required title="8 characters minimum"><br><br></td>
 				</tr>
 				<tr>
 					<td>Enter your email ID</td>
-					<td><input type="text" name="email" required><br><br></td>
+					<td><input type="email" name="email" required><br><br></td>
 				</tr>
 			</table>
 			<br>
@@ -62,11 +63,13 @@
 				<strong>ENTER CUSTOMER'S PERSONAL DETAILS</strong>
 				<tr>
 					<td>Enter your name  </td>
-					<td><input type="text" name="name" required><br><br></td>
+					<td><div class="form-group"><input type="text" name="name" required><br><br></div></td>
 				</tr>
 				<tr>
+				<div class="form-group">
 					<td>Enter your phone no.</td>
-					<td><input type="text" name="phone_no" required><br><br></td>
+					<td><input type="text" name="phone_no" pattern="[1-9]{1}[0-9]{9}" title="10 digit pone number" required><br><br></td>
+		</div>
 				</tr>
 				<tr>
 					<td>Enter your address</td>
@@ -81,5 +84,6 @@
 			<input type="submit" value="Submit" name="Submit">
 			<br>
 		</form>
+		</div>
 	</body>
 </html>

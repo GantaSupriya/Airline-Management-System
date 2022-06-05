@@ -40,7 +40,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: url('images/cloud.jpg');background-repeat: no-repeat; background-size: 1600px 600px;background-position:bottom;">
 	<img class="logo" src="images\air.jpg"/> 
 	<h1 id="title" style="color:rgb(14, 118, 187);font-family:'Dancing Script', cursive;">
 			Blu Airways
@@ -107,9 +107,9 @@
 		}
 
 		?>
-		<form class="float_form" style="padding-left: 40px" action="ticket.php" method="post">
-        <input type="submit" name="pdf"
-                class="button" value="pdf" />
-			</form>
+<form class="form-inline" method="post" action="generate.php">
+<!-- <button type="submit" id="pdf" name="generate_pdf" class="btn btn-primary"><i class="fa fa-pdf"aria-hidden="true"></i>
+Generate PDF</button> -->
+</form>
 	</body>
 </html>
