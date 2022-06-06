@@ -17,6 +17,9 @@ For UI Testing: <br />
 ## Language Used
 PHP - for building project and testing.
 
+## InVision Planning
+<a href = "https://drhuthvik779627.invisionapp.com/freehand/Airline-Management-uiLgXOVxb"> InVision Planning </a>
+
 ## Project Management Process
 For managing the project among the team members, we have used a platform called <a href = "https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=93058444980&campaign=9124878606&creative=542638212437&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p51242181056&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclid=Cj0KCQjwqPGUBhDwARIsANNwjV54FMpErLH5Jgo314rOQHW3n7dkuAjC-4X7R0S0tH79P90Hed7T3XUaAnRnEALw_wcB&gclsrc=aw.ds">Jira</a> provided by <a href = "https://www.atlassian.com/?&aceid=&adposition=&adgroup=99178947294&campaign=9869842034&creative=431933448859&device=c&keyword=atlassian&matchtype=e&network=g&placement=&ds_kids=p53277688150&ds_e=GOOGLE&ds_eid=700000001530700&ds_e1=GOOGLE&utm_medium=paid-search&gclid=Cj0KCQjwqPGUBhDwARIsANNwjV5v1LvwFPL3o2tqqYYQymzSiB6NgDGYZcL7fitbVKnip-NruS7waV4aAm18EALw_wcB&gclsrc=aw.ds">Atlassian</a>.
 <ul>
