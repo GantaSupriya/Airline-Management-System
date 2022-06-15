@@ -1,7 +1,7 @@
 # Airline-Management-System
 
 ## Introduction
-Airline Management System is a solely PHP based application. It provides a user an easier way to access the system and is user friendly. This system helps the user book a flight and delete ine at the same time. There are many more functionalities to this system that are performed.
+Airline Management System is a solely PHP based application. It provides a user an easier way to access the system and is user friendly. This system helps the user to book a flight and delete it at the same time. There are many more functionalities to this system that are performed.
 
 ## Platform Used
 For Project building: <br />
