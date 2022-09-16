@@ -25,7 +25,7 @@ For managing the project among the team members, we have used a platform called 
 <ul>
   <li>The team members, namely Scrum master, developer and tester, are assigned the tasks to be performed using the Jira platform by the scrum master.</li>
   <li>A sprint will be created as per the scrum master's will to check and progress through the project construction.</li>
-  <li>Constant meets are held to monitor the progress of the project.</li>
+  <li>Constant meets are held to monitor the progress of the project..</li>
 </ul>
 Testing
 <ul>
